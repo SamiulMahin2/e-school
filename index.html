@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-School</title>
+	<link rel="icon" href="images/favicon.jpg">
+	<!-- css links -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<!-- header start -->
+<header>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg custom_nav">
+			<div class="container-fluid p-0">
+				<!-- logo start -->
+				<a class="navbar-brand logo" href="index.html">
+					<img src="images/logo.png" class="img-fluid" alt="E-School">
+				</a>
+				<!-- logo end -->
+				<button class="navbar-toggler nav_button" type="button" data-bs-toggle="collapse" data-bs-target="#nav_id" aria-controls="nav_id" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse menu" id="nav_id">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Books</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Courses</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Others</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+					</ul>
+					<!-- sign in -->
+					<button type="button" class="btn btn-primary common_button custom_modal_btn" data-bs-toggle="modal" data-bs-target="#sign_in_id">
+						Sign in
+					</button>
+					<!-- sign in modal -->
+					<div class="modal fade" id="sign_in_id" tabindex="-1" aria-labelledby="sign_in_idLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content full_sign_in">
+								<div class="modal-header sign_in_header">
+									<h1 class="modal-title fs-5 sign_in_h1" id="sign_in_idLabel">Kindly fill up the form</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<!-- sign in form -->
+								<div class="modal-body sign_in_form">
+									<form class="row g-3 needs-validation" novalidate>
+										<div class="col-md-4">
+											<label for="first-name" class="form-label">First name</label>
+											<input type="text" class="form-control" id="first-name" required>
+											<div class="invalid-feedback">
+												Please choose a first name.
+											</div>
+										</div>
+										<div class="col-md-4">
+											<label for="last-name" class="form-label">Last name</label>
+											<input type="text" class="form-control" id="last-name" required>
+											<div class="invalid-feedback">
+												Please choose a last name.
+											</div>
+										</div>
+										<div class="col-md-4">
+											<label for="username" class="form-label">Username</label>
+											<div class="input-group has-validation">
+												<span class="input-group-text" id="inputGroupPrepend">@</span>
+												<input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" required>
+												<div class="invalid-feedback">
+													Please choose a username.
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label for="institution" class="form-label">Institution</label>
+											<input type="text" class="form-control" id="institution" required>
+											<div class="invalid-feedback">
+												Please provide a institution.
+											</div>
+										</div>
+										<div class="col-md-3">
+											<label for="class" class="form-label">Class</label>
+											<input type="text" class="form-control" id="class" required>
+											<div class="invalid-feedback">
+												Please select the which you read in.
+											</div>
+										</div>
+										<div class="col-md-3">
+											<label for="course" class="form-label">Course</label>
+											<select class="form-select" id="course" required>
+												<option selected disabled value="">Courses</option>
+												<option>...</option>
+											</select>
+											<div class="invalid-feedback">
+												Please select the course which you want to buy.
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+												<label class="form-check-label" for="invalidCheck">
+													Agree to terms and conditions
+												</label>
+												<div class="invalid-feedback">
+													You must agree before submitting.
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<button class="btn btn-primary common_button sign_in_submit" type="submit">Sign in</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+<!-- header end -->
+
+<!-- banner start -->
+<section class="banner">
+   <div class="container">
+	<div class="row align-content-center">
+		<div class="col-xl-5 col-lg-6 order-lg-1 order-2">
+			<div class="banner_text">
+				<p class="banner_p1">Are you ready to Learn?</p>
+				<h1 class="banner_h1">Learn With fun on <span>any schedule</span></h1>
+				<p class="banner_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis quam netus.</p>
+				<a href="#" class="btn common_button banner_button">Get Started</a>
+			</div>
+		</div>
+		<div class="offset-xl-1 col-xl-6 col-lg-6 order-lg-2 order-1">
+			<div class="banner_img">
+				<img src="images/banner.png" class="w-100" alt="E-School">
+			</div>
+		</div>
+	</div>
+   </div>
+</section>
+<!-- banner end -->
+
+<!-- feature start -->
+<section class="feature common_padding">
+	<div class="container">
+		<div class="row">
+
+			<!-- single feature item_1 start -->
+			<div class="col-lg-3 col-sm-6">
+				<div class="feature_item text-center">
+					<div class="feature_img img1 m-auto">
+						<img src="images/feature_img1.png" class="img-fluid" alt="E-School">
+					</div>
+					<div class="feature_text">
+						<h2>1500+ Topic</h2>
+						<p class="m-0">Learn Anythings</p>
+					</div>
+				</div>
+			</div>
+			<!-- single feature item_1 end -->
+
+			<!-- single feature item_2 start -->
+			<div class="col-lg-3 col-sm-6">
+				<div class="feature_item text-center">
+					<div class="feature_img img2 m-auto">
+						<img src="images/feature_img2.png" class="img-fluid" alt="E-School">
+					</div>
+					<div class="feature_text">
+						<h2>1800+ Students</h2>
+						<p class="m-0">Learn Anythings</p>
+					</div>
+				</div>
+			</div>
+			<!-- single feature item_2 end -->
+
+			<!-- single feature item_3 start -->
+			<div class="col-lg-3 col-sm-6">
+				<div class="feature_item text-center">
+					<div class="feature_img img3 m-auto">
+						<img src="images/feature_img3.png" class="img-fluid" alt="E-School">
+					</div>
+					<div class="feature_text">
+						<h2>9K+ Test Token</h2>
+						<p class="m-0">Learn Anythings</p>
+					</div>
+				</div>
+			</div>
+			<!-- single feature item_3 end -->
+
+			<!-- single feature item_4 start -->
+			<div class="col-lg-3 col-sm-6">
+				<div class="feature_item text-center">
+					<div class="feature_img img4 m-auto">
+						<img src="images/feature_img4.png" class="img-fluid" alt="E-School">
+					</div>
+					<div class="feature_text">
+						<h2>2000+ Student</h2>
+						<p class="m-0">Learn Anythings</p>
+					</div>
+				</div>
+			</div>
+			<!-- single feature item_4 end -->
+
+		</div>
+	</div>
+</section>
+<!-- feature end -->
+
+<!-- course start -->
+<section class="course common_padding">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-4 text-center">
+				<div class="common_h1">
+					<h1 class="mb-0">Online Courses</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- single course item1 start -->
+			<div class="col-lg-4 p-0">
+             <div class="course_item">
+             	<div class="course_img">
+             		<img src="images/course_img1.png" class="w-100" alt="E-School">
+             	</div>
+             	<div class="course_text">
+             		<h2>Modern Psychology</h2>
+             		<p class="mb-0">Designation</p>
+             		<a href="#" class="btn common_button">Buy Course</a>
+             	</div>
+             	<div class="row course_down_item">
+             		<div class="col-lg-2 col-2 p-0">
+             			<div class="course_left_img">
+             				<img src="images/course_left.png" class="w-100 course_down_img" alt="E-School">
+             			</div>
+             		</div>
+             		<div class="col-lg-5 col-5 p-0">
+             			<div class="course_left_text">
+             				<span class="common_course_span">Start 20  April, 2021</span>
+             			</div>
+             		</div>
+             		<div class="col-lg-2 col-2 p-0">
+             			<div class="course_right_img">
+             				<img src="images/course_right.png" class="w-100 course_down_img" alt="E-School">
+             			</div>
+             		</div>
+             		<div class="col-lg-3 col-3 p-0">
+             			<div class="course_right_text">
+             				<span class="common_course_span">60 seats</span>
+             			</div>
+             		</div>
+             	</div>
+             </div>
+			</div>
+			<!-- single course item1 end -->
+
+			<!-- single course item2 start -->
+			<div class="col-lg-4 p-0">
+             <div class="course_item">
+             	<div class="course_img">
+             		<img src="images/course_img2.png" class="w-100" alt="E-School">
+             	</div>
+             	<div class="course_text">
+             		<h2>Modern Psychology</h2>
+             		<p class="mb-0">Designation</p>
+             		<a href="#" class="btn common_button">Buy Course</a>
+             	</div>
+             	<div class="row course_down_item">
+             		<div class="col-lg-2 col-2 p-0">
+             			<div class="course_left_img">
+             				<img src="images/course_left.png" class="w-100 course_down_img" alt="E-School">
+             			</div>
+             		</div>
+             		<div class="col-lg-5 col-5 p-0">
+             			<div class="course_left_text">
+             				<span class="common_course_span">Start 20  April, 2021</span>
+             			</div>
+             		</div>
+             		<div class="col-lg-2 col-2 p-0">
+             			<div class="course_right_img">
+             				<img src="images/course_right.png" class="w-100 course_down_img" alt="E-School">
+             			</div>
+             		</div>
+             		<div class="col-lg-3 col-3 p-0">
+             			<div class="course_right_text">
+             				<span class="common_course_span">60 seats</span>
+             			</div>
+             		</div>
+             	</div>
+             </div>
+			</div>
+			<!-- single course item2 end -->
+
+			<!-- single course item3 start -->
+			<div class="col-lg-4 p-0">
+             <div class="course_item">
+             	<div class="course_img">
+             		<img src="images/course_img3.png" class="w-100" alt="E-School">
+             	</div>
+             	<div class="course_text">
+             		<h2>Modern Psychology</h2>
+             		<p class="mb-0">Designation</p>
+             		<a href="#" class="btn common_button">Buy Course</a>
+             	</div>
+             	<div class="row course_down_item">
+             		<div class="col-lg-2 col-2 p-0">
+             			<div class="course_left_img">
+             				<img src="images/course_left.png" class="w-100 course_down_img" alt="E-School">
+             			</div>
+             		</div>
+             		<div class="col-lg-5 col-5 p-0">
+             			<div class="course_left_text">
+             				<span class="common_course_span">Start 20  April, 2021</span>
+             			</div>
+             		</div>
+             		<div class="col-lg-2 col-2 p-0">
+             			<div class="course_right_img">
+             				<img src="images/course_right.png" class="w-100 course_down_img" alt="E-School">
+             			</div>
+             		</div>
+             		<div class="col-lg-3 col-3 p-0">
+             			<div class="course_right_text">
+             				<span class="common_course_span">60 seats</span>
+             			</div>
+             		</div>
+             	</div>
+             </div>
+			</div>
+			<!-- single course item3 end -->
+		</div>
+
+	</div>
+</section>
+<!-- course end -->
+
+<!-- testimony start -->
+<section class="testimony common_padding">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-3 text-center">
+				<div class="common_h1">
+					<h1 class="mb-0">Testimonial</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div id="slider_id" class="carousel slide" data-bs-ride="carousel">
+					<!-- inner -->
+					<div class="carousel-inner">
+
+					<!-- testimony item1 start -->
+					<div class="carousel-item active" data-bs-interval="3000">
+						<div class="row testimony_item">
+							<div class="col-md-3 align-items-center">
+								<div class="testimony_img">
+									<img src="images/testimony_img.png" class="w-100" alt="E-School">
+								</div>
+							</div>
+							<div class="col-md-9">
+								<div class="testimony_text">
+									<p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- testimony item1 end -->
+
+					<!-- testimony item2 start -->
+					<div class="carousel-item" data-bs-interval="3000">
+						<div class="row testimony_item">
+							<div class="col-md-3 align-items-center">
+								<div class="testimony_img">
+									<img src="images/testimony_img.png" class="w-100" alt="E-School">
+								</div>
+							</div>
+							<div class="col-md-9">
+								<div class="testimony_text">
+									<p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- testimony item2 end -->
+
+					<!-- testimony item3 start -->
+					<div class="carousel-item" data-bs-interval="3000">
+						<div class="row testimony_item">
+							<div class="col-md-3 align-items-center">
+								<div class="testimony_img">
+									<img src="images/testimony_img.png" class="w-100" alt="E-School">
+								</div>
+							</div>
+							<div class="col-md-9">
+								<div class="testimony_text">
+									<p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- testimony item3 end -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- testimony end -->
+
+<!-- footer top start -->
+<section class="footer_top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-sm-12">
+				<div class="f_top_part1">
+					<p class="mb-0">Millions of people of all ages and from around the world are improving their lives with us. Millions of people of all ages and from around the world are improving their lives with us.</p>
+				</div>
+			</div>
+			<div class="col-lg col-sm-4">
+				<div class="f_top_part2 small1">
+					<h2>Course</h2>
+					<ul>
+						<li><a href="#">Graphic Design</a></li>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">Engineering</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg col-sm-4">
+				<div class="f_top_part2 small2">
+					<h2>Terms</h2>
+					<ul>
+						<li><a href="#">Graphic Design</a></li>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">Engineering</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg col-sm-4">
+				<div class="f_top_part2 small3">
+					<h2>Useful Link</h2>
+					<ul>
+						<li><a href="#">Graphic Design</a></li>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">Engineering</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- footer top end -->
+
+<!-- footer start -->
+<footer>
+	<div class="footer_item">
+		<p class="mb-0">Copyright © 2025 <a href="https://github.com/SamiulMahin2">Samiul Mahin</a></p>
+	</div>
+</footer>
+<!-- footer end -->
+
+<!-- js links -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
